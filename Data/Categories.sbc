@@ -1,0 +1,37 @@
+<?xml version="1.0"  encoding="utf-8"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <CategoryClasses>
+    <Category xsi:type="MyObjectBuilder_GuiBlockCategoryDefinition">
+      <Id>
+        <TypeId>GuiBlockCategoryDefinition</TypeId>
+        <SubtypeId/>
+      </Id>
+      <DisplayName>DisplayName_Category_LargeBlocks</DisplayName>
+      <Name>LargeBlocks</Name>
+      <ItemIds>
+        <string>ButtonPanel/ElevatorPad</string>
+        <string>ButtonPanel/ElevatorButtonPad_Rail</string>
+        <string>CubeBlock/ElevatorPad_Rail</string>
+        <string>CubeBlock/ElevatorPad_SideRails</string>
+        <string>CubeBlock/ElevatorPad_Corner</string>
+        <string>CubeBlock/ElevatorPad_Plate</string>
+      </ItemIds>
+    </Category>
+    <Category xsi:type="MyObjectBuilder_GuiBlockCategoryDefinition">
+      <Id>
+        <TypeId>GuiBlockCategoryDefinition</TypeId>
+        <SubtypeId/>
+      </Id>
+      <DisplayName>ElevatorPad</DisplayName>
+      <Name>ElevatorPad</Name>
+      <ItemIds>
+        <string>ButtonPanel/ElevatorPad</string>
+        <string>ButtonPanel/ElevatorButtonPad_Rail</string>
+        <string>CubeBlock/ElevatorPad_Rail</string>
+        <string>CubeBlock/ElevatorPad_SideRails</string>
+        <string>CubeBlock/ElevatorPad_Corner</string>
+        <string>CubeBlock/ElevatorPad_Plate</string>
+      </ItemIds>
+    </Category>
+  </CategoryClasses>
+</Definitions>

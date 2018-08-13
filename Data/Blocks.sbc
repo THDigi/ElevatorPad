@@ -1,0 +1,350 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <CubeBlocks>
+
+    <Definition xsi:type="MyObjectBuilder_ButtonPanelDefinition">
+      <Id>
+        <TypeId>ButtonPanel</TypeId>
+        <SubtypeId>ElevatorPad</SubtypeId>
+      </Id>
+      <DisplayName>Elevator Button Pad</DisplayName>
+      <Icon>Textures\Icons\ElevatorButtonPad.dds</Icon>
+      <CubeSize>Large</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="1" y="1" z="1" />
+      <ModelOffset x="0" y="0" z="0" />
+      <Model>Models\ElevatorButtonPad.mwm</Model>
+      <UseModelIntersection>true</UseModelIntersection>
+      <Components>
+        <Component Subtype="Construction" Count="8" />
+        <Component Subtype="SteelPlate" Count="2" />
+        <Component Subtype="InteriorPlate" Count="2" />
+        <Component Subtype="MetalGrid" Count="15" />
+        <Component Subtype="SmallTube" Count="24" />
+        <Component Subtype="Computer" Count="1" />
+        <Component Subtype="InteriorPlate" Count="1" />
+        <Component Subtype="MetalGrid" Count="5" />
+      </Components>
+      <CriticalComponent Subtype="Computer" Index="0" />
+	<MountPoints>
+        <MountPoint Side="Front" StartX="0.00" StartY="0.00" EndX="1.00" EndY="0.05" />
+        <MountPoint Side="Back" StartX="0.00" StartY="0.00" EndX="1.00" EndY="0.05" />
+        <MountPoint Side="Left" StartX="0.00" StartY="0.00" EndX="1.00" EndY="0.05" />
+        <MountPoint Side="Right" StartX="0.00" StartY="0.00" EndX="1.00" EndY="0.05" />
+        <MountPoint Side="Bottom" StartX="0.00" StartY="0.00" EndX="1.00" EndY="1.00" />
+        <MountPoint Side="Front" StartX="0.48" StartY="0.05" EndX="0.52" EndY="0.51" />
+	</MountPoints>
+      <BuildProgressModels>
+        <Model BuildPercentUpperBound="0.5" File="Models\ElevatorButtonPad_Construction1.mwm" />
+        <Model BuildPercentUpperBound="1.0" File="Models\ElevatorButtonPad_Construction2.mwm" />
+      </BuildProgressModels>
+      <BlockPairName>ElevatorPad</BlockPairName>
+      <EdgeType>Light</EdgeType>
+      <MirroringY>Z</MirroringY>
+      <MirroringZ>Y</MirroringZ>
+      <BuildTimeSeconds>12</BuildTimeSeconds>
+      <ButtonCount>1</ButtonCount>
+      <UnassignedButtonColor>
+        <X>0.34</X>
+        <Y>0.34</Y>
+        <Z>0.34</Z>
+        <W>0</W>
+      </UnassignedButtonColor>
+      <ButtonColors>
+        <Vector4>
+          <X>1</X>
+          <Y>1</Y>
+          <Z>0.3</Z>
+          <W>1</W>
+        </Vector4>
+      </ButtonColors>
+      <ButtonSymbols>
+        <string>Textures\GUI\Icons\buttons\IconSquareHighlight.dds</string>
+      </ButtonSymbols>
+      <DamageEffectId>214</DamageEffectId>
+      <UseModelIntersection>true</UseModelIntersection>
+
+      <BlockVariants>
+        <BlockVariant>
+          <TypeId>ButtonPanel</TypeId>
+          <SubtypeId>ElevatorButtonPad_Rail</SubtypeId>
+        </BlockVariant>
+      </BlockVariants>
+    </Definition>
+
+    <Definition xsi:type="MyObjectBuilder_ButtonPanelDefinition">
+      <Id>
+        <TypeId>ButtonPanel</TypeId>
+        <SubtypeId>ElevatorButtonPad_Rail</SubtypeId>
+      </Id>
+      <DisplayName>Elevator Button Pad Rail</DisplayName>
+      <Icon>Textures\Icons\ElevatorButtonPad_Rail.dds</Icon>
+      <GuiVisible>false</GuiVisible>
+      <CubeSize>Large</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="1" y="1" z="1" />
+      <ModelOffset x="0" y="0" z="0" />
+      <Model>Models\ElevatorButtonPad_Rail.mwm</Model>
+      <UseModelIntersection>true</UseModelIntersection>
+      <Components>
+        <Component Subtype="Construction" Count="10" />
+        <Component Subtype="MetalGrid" Count="15" />
+        <Component Subtype="SmallTube" Count="20" />
+        <Component Subtype="MetalGrid" Count="5" />
+        <Component Subtype="InteriorPlate" Count="10" />
+        <Component Subtype="Computer" Count="10" />
+        <Component Subtype="Construction" Count="5" />
+        <Component Subtype="InteriorPlate" Count="2" />
+      </Components>
+      <CriticalComponent Subtype="Computer" Index="0" />
+	<MountPoints>
+        <MountPoint Side="Front" StartX="0.00" StartY="0.00" EndX="1.00" EndY="0.41" />
+        <MountPoint Side="Left" StartX="0.00" StartY="0.00" EndX="1.00" EndY="0.05" />
+        <MountPoint Side="Right" StartX="0.00" StartY="0.00" EndX="1.00" EndY="0.05" />
+        <MountPoint Side="Bottom" StartX="0.00" StartY="0.00" EndX="1.00" EndY="1.00" />
+        <MountPoint Side="Right" StartX="0.96" StartY="0.05" EndX="1.00" EndY="0.41" />
+        <MountPoint Side="Back" StartX="0.00" StartY="0.00" EndX="1.00" EndY="0.05" />
+        <MountPoint Side="Left" StartX="0.00" StartY="0.05" EndX="0.04" EndY="0.41" />
+	</MountPoints>
+      <BuildProgressModels>
+        <Model BuildPercentUpperBound="0.5" File="Models\ElevatorButtonPad_Rail_Construction1.mwm" />
+        <Model BuildPercentUpperBound="1.0" File="Models\ElevatorButtonPad_Rail_Construction2.mwm" />
+      </BuildProgressModels>
+      <BlockPairName>ElevatorButtonPad_Rail</BlockPairName>
+      <EdgeType>Light</EdgeType>
+      <MirroringY>Z</MirroringY>
+      <MirroringZ>Y</MirroringZ>
+      <BuildTimeSeconds>16</BuildTimeSeconds>
+      <ButtonCount>4</ButtonCount>
+      <ButtonSymbols>
+        <string>Textures\GUI\Icons\buttons\OneButton.dds</string>
+        <string>Textures\GUI\Icons\buttons\TwoButton.dds</string>
+        <string>Textures\GUI\Icons\buttons\ThreeButton.dds</string>
+        <string>Textures\GUI\Icons\buttons\FourButton.dds</string>
+      </ButtonSymbols>
+      <UnassignedButtonColor>
+        <X>0.34</X>
+        <Y>0.34</Y>
+        <Z>0.34</Z>
+        <W>0</W>
+      </UnassignedButtonColor>
+      <ButtonColors>
+        <Vector4>
+          <X>1</X>
+          <Y>1</Y>
+          <Z>0.3</Z>
+          <W>1</W>
+        </Vector4>
+        <Vector4>
+          <X>1</X>
+          <Y>1</Y>
+          <Z>0.3</Z>
+          <W>1</W>
+        </Vector4>
+        <Vector4>
+          <X>1</X>
+          <Y>1</Y>
+          <Z>0.3</Z>
+          <W>1</W>
+        </Vector4>
+        <Vector4>
+          <X>1</X>
+          <Y>1</Y>
+          <Z>0.3</Z>
+          <W>1</W>
+        </Vector4>
+      </ButtonColors>
+      <DamageEffectId>214</DamageEffectId>
+      <UseModelIntersection>true</UseModelIntersection>
+    </Definition>
+
+    <Definition>
+      <Id>
+        <TypeId>CubeBlock</TypeId>
+        <SubtypeId>ElevatorPad_Rail</SubtypeId>
+      </Id>
+      <DisplayName>Elevator Pad Rail</DisplayName>
+      <Icon>Textures\Icons\ElevatorPad_Rail.dds</Icon>
+      <GuiVisible>false</GuiVisible>
+      <CubeSize>Large</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="1" y="1" z="1" />
+      <ModelOffset x="0" y="0" z="0" />
+      <Model>Models\ElevatorPad_Rail.mwm</Model>
+      <UseModelIntersection>true</UseModelIntersection>
+      <Components>
+        <Component Subtype="Construction" Count="5" />
+        <Component Subtype="MetalGrid" Count="20" />
+        <Component Subtype="SmallTube" Count="20" />
+        <Component Subtype="MetalGrid" Count="5" />
+        <Component Subtype="InteriorPlate" Count="2" />
+      </Components>
+      <CriticalComponent Subtype="SmallTube" Index="0" />
+	<MountPoints>
+        <MountPoint Side="Front" StartX="0.00" StartY="0.00" EndX="1.00" EndY="0.41" />
+        <MountPoint Side="Left" StartX="0.00" StartY="0.00" EndX="1.00" EndY="0.05" />
+        <MountPoint Side="Right" StartX="0.00" StartY="0.00" EndX="1.00" EndY="0.05" />
+        <MountPoint Side="Bottom" StartX="0.00" StartY="0.00" EndX="1.00" EndY="1.00" />
+        <MountPoint Side="Right" StartX="0.96" StartY="0.05" EndX="1.00" EndY="0.41" />
+        <MountPoint Side="Back" StartX="0.00" StartY="0.00" EndX="1.00" EndY="0.05" />
+        <MountPoint Side="Left" StartX="0.00" StartY="0.05" EndX="0.04" EndY="0.41" />
+	</MountPoints>
+      <BuildProgressModels>
+        <Model BuildPercentUpperBound="1.00" File="Models\ElevatorPad_Rail_Construction1.mwm" />
+      </BuildProgressModels>
+      <BlockPairName>ElevatorPad_Rail</BlockPairName>
+      <MirroringY>Z</MirroringY>
+      <MirroringZ>Y</MirroringZ>
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>10</BuildTimeSeconds>
+      <UseModelIntersection>true</UseModelIntersection>
+    </Definition>
+
+    <Definition>
+      <Id>
+        <TypeId>CubeBlock</TypeId>
+        <SubtypeId>ElevatorPad_SideRails</SubtypeId>
+      </Id>
+      <DisplayName>Elevator Pad Side Rails</DisplayName>
+      <Icon>Textures\Icons\ElevatorPad_SideRails.dds</Icon>
+      <GuiVisible>false</GuiVisible>
+      <CubeSize>Large</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="1" y="1" z="1" />
+      <ModelOffset x="0" y="0" z="0" />
+      <Model>Models\ElevatorPad_SideRails.mwm</Model>
+      <UseModelIntersection>true</UseModelIntersection>
+      <Components>
+        <Component Subtype="Construction" Count="7" />
+        <Component Subtype="MetalGrid" Count="20" />
+        <Component Subtype="SmallTube" Count="25" />
+        <Component Subtype="MetalGrid" Count="10" />
+        <Component Subtype="InteriorPlate" Count="2" />
+      </Components>
+      <CriticalComponent Subtype="SmallTube" Index="0" />
+	<MountPoints>
+        <MountPoint Side="Front" StartX="0.00" StartY="0.00" EndX="1.00" EndY="0.41" />
+        <MountPoint Side="Back" StartX="0.00" StartY="0.00" EndX="1.00" EndY="0.41" />
+        <MountPoint Side="Left" StartX="0.00" StartY="0.00" EndX="1.00" EndY="0.05" />
+        <MountPoint Side="Right" StartX="0.00" StartY="0.00" EndX="1.00" EndY="0.05" />
+        <MountPoint Side="Bottom" StartX="0.00" StartY="0.00" EndX="1.00" EndY="1.00" />
+        <MountPoint Side="Right" StartX="0.00" StartY="0.05" EndX="0.04" EndY="0.41" />
+        <MountPoint Side="Right" StartX="0.96" StartY="0.05" EndX="1.00" EndY="0.41" />
+        <MountPoint Side="Left" StartX="0.96" StartY="0.05" EndX="1.00" EndY="0.41" />
+        <MountPoint Side="Left" StartX="0.00" StartY="0.05" EndX="0.04" EndY="0.41" />
+	</MountPoints>
+      <BuildProgressModels>
+        <Model BuildPercentUpperBound="1.00" File="Models\ElevatorPad_SideRails_Construction1.mwm" />
+      </BuildProgressModels>
+      <BlockPairName>ElevatorPad_SideRails</BlockPairName>
+      <MirroringY>Z</MirroringY>
+      <MirroringZ>Y</MirroringZ>
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>10</BuildTimeSeconds>
+      <UseModelIntersection>true</UseModelIntersection>
+    </Definition>
+
+    <Definition>
+      <Id>
+        <TypeId>CubeBlock</TypeId>
+        <SubtypeId>ElevatorPad_Corner</SubtypeId>
+      </Id>
+      <DisplayName>Elevator Pad Corner</DisplayName>
+      <Icon>Textures\Icons\ElevatorPad_Corner.dds</Icon>
+      <GuiVisible>false</GuiVisible>
+      <CubeSize>Large</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="1" y="1" z="1" />
+      <ModelOffset x="0" y="0" z="0" />
+      <Model>Models\ElevatorPad_Corner.mwm</Model>
+      <UseModelIntersection>true</UseModelIntersection>
+      <Components>
+        <Component Subtype="Construction" Count="7" />
+        <Component Subtype="MetalGrid" Count="20" />
+        <Component Subtype="SmallTube" Count="25" />
+        <Component Subtype="MetalGrid" Count="10" />
+        <Component Subtype="InteriorPlate" Count="2" />
+      </Components>
+      <CriticalComponent Subtype="SmallTube" Index="0" />
+	<MountPoints>
+        <MountPoint Side="Front" StartX="0.00" StartY="0.00" EndX="1.00" EndY="0.41" />
+        <MountPoint Side="Left" StartX="0.00" StartY="0.00" EndX="1.00" EndY="0.05" />
+        <MountPoint Side="Right" StartX="0.00" StartY="0.00" EndX="1.00" EndY="0.05" />
+        <MountPoint Side="Bottom" StartX="0.00" StartY="0.00" EndX="1.00" EndY="1.00" />
+        <MountPoint Side="Right" StartX="0.00" StartY="0.05" EndX="1.00" EndY="0.41" />
+        <MountPoint Side="Back" StartX="0.00" StartY="0.00" EndX="1.00" EndY="0.05" />
+        <MountPoint Side="Left" StartX="0.00" StartY="0.05" EndX="0.04" EndY="0.41" />
+        <MountPoint Side="Back" StartX="0.96" StartY="0.05" EndX="1.00" EndY="0.41" />
+	</MountPoints>
+      <BuildProgressModels>
+        <Model BuildPercentUpperBound="1.00" File="Models\ElevatorPad_Corner_Construction1.mwm" />
+      </BuildProgressModels>
+      <BlockPairName>ElevatorPad_Corner</BlockPairName>
+      <MirroringY>ZHalfY</MirroringY>
+      <MirroringZ>HalfY</MirroringZ>
+      <MirroringX>MinusHalfY</MirroringX>
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>10</BuildTimeSeconds>
+      <UseModelIntersection>true</UseModelIntersection>
+    </Definition>
+
+    <Definition>
+      <Id>
+        <TypeId>CubeBlock</TypeId>
+        <SubtypeId>ElevatorPad_Plate</SubtypeId>
+      </Id>
+      <DisplayName>Elevator Pad</DisplayName>
+      <Icon>Textures\Icons\ElevatorPad_Plate.dds</Icon>
+      <CubeSize>Large</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="1" y="1" z="1" />
+      <ModelOffset x="0" y="0" z="0" />
+      <Model>Models\ElevatorPad.mwm</Model>
+      <UseModelIntersection>true</UseModelIntersection>
+      <Components>
+        <Component Subtype="Construction" Count="3" />
+        <Component Subtype="MetalGrid" Count="15" />
+        <Component Subtype="SmallTube" Count="20" />
+        <Component Subtype="MetalGrid" Count="5" />
+        <Component Subtype="InteriorPlate" Count="2" />
+      </Components>
+      <CriticalComponent Subtype="SmallTube" Index="0" />
+      <MountPoints>
+        <MountPoint Side="Front" StartX="0.00" StartY="0.00" EndX="1.00" EndY="0.05" />
+        <MountPoint Side="Back" StartX="0.00" StartY="0.00" EndX="1.00" EndY="0.05" />
+        <MountPoint Side="Left" StartX="0.00" StartY="0.00" EndX="1.00" EndY="0.05" />
+        <MountPoint Side="Right" StartX="0.00" StartY="0.00" EndX="1.00" EndY="0.05" />
+        <MountPoint Side="Bottom" StartX="0.00" StartY="0.00" EndX="1.00" EndY="1.00" />
+      </MountPoints>
+      <BuildProgressModels>
+        <Model BuildPercentUpperBound="1.00" File="Models\ElevatorPad_Construction1.mwm" />
+      </BuildProgressModels>
+      <BlockPairName>ElevatorPad_Plate</BlockPairName>
+      <MirroringY>Z</MirroringY>
+      <MirroringZ>Y</MirroringZ>
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>10</BuildTimeSeconds>
+      <UseModelIntersection>true</UseModelIntersection>
+
+      <BlockVariants>
+        <BlockVariant>
+          <TypeId>CubeBlock</TypeId>
+          <SubtypeId>ElevatorPad_Corner</SubtypeId>
+        </BlockVariant>
+        <BlockVariant>
+          <TypeId>CubeBlock</TypeId>
+          <SubtypeId>ElevatorPad_SideRails</SubtypeId>
+        </BlockVariant>
+        <BlockVariant>
+          <TypeId>CubeBlock</TypeId>
+          <SubtypeId>ElevatorPad_Rail</SubtypeId>
+        </BlockVariant>
+        <BlockVariant>
+          <TypeId>CubeBlock</TypeId>
+          <SubtypeId>ElevatorPad_SideRails</SubtypeId>
+        </BlockVariant>
+      </BlockVariants>
+    </Definition>
+
+  </CubeBlocks>
+</Definitions>

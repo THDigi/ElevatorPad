@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <BlueprintClassEntries>
+    <Entry Class="LargeBlocks" BlueprintSubtypeId="ButtonPanel/ElevatorPad" />
+    <Entry Class="LargeBlocks" BlueprintSubtypeId="ButtonPanel/ElevatorButtonPad_Rail" />
+    <Entry Class="LargeBlocks" BlueprintSubtypeId="CubeBlock/ElevatorPad_Rail" />
+    <Entry Class="LargeBlocks" BlueprintSubtypeId="CubeBlock/ElevatorPad_SideRails" />
+    <Entry Class="LargeBlocks" BlueprintSubtypeId="CubeBlock/ElevatorPad_Corner" />
+    <Entry Class="LargeBlocks" BlueprintSubtypeId="CubeBlock/ElevatorPad_Plate" />
+  </BlueprintClassEntries>
+</Definitions>
