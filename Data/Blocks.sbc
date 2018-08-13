@@ -7,6 +7,8 @@
         <TypeId>ButtonPanel</TypeId>
         <SubtypeId>ElevatorPad</SubtypeId>
       </Id>
+      <PCU>5</PCU>
+      <BlockPairName>ElevatorPad</BlockPairName>
       <DisplayName>Elevator Button Pad</DisplayName>
       <Icon>Textures\Icons\ElevatorButtonPad.dds</Icon>
       <CubeSize>Large</CubeSize>
@@ -26,23 +28,22 @@
         <Component Subtype="MetalGrid" Count="5" />
       </Components>
       <CriticalComponent Subtype="Computer" Index="0" />
-	<MountPoints>
+      <MountPoints>
         <MountPoint Side="Front" StartX="0.00" StartY="0.00" EndX="1.00" EndY="0.05" />
         <MountPoint Side="Back" StartX="0.00" StartY="0.00" EndX="1.00" EndY="0.05" />
         <MountPoint Side="Left" StartX="0.00" StartY="0.00" EndX="1.00" EndY="0.05" />
         <MountPoint Side="Right" StartX="0.00" StartY="0.00" EndX="1.00" EndY="0.05" />
         <MountPoint Side="Bottom" StartX="0.00" StartY="0.00" EndX="1.00" EndY="1.00" />
         <MountPoint Side="Front" StartX="0.48" StartY="0.05" EndX="0.52" EndY="0.51" />
-	</MountPoints>
+      </MountPoints>
       <BuildProgressModels>
         <Model BuildPercentUpperBound="0.5" File="Models\ElevatorButtonPad_Construction1.mwm" />
         <Model BuildPercentUpperBound="1.0" File="Models\ElevatorButtonPad_Construction2.mwm" />
       </BuildProgressModels>
-      <BlockPairName>ElevatorPad</BlockPairName>
-      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>12</BuildTimeSeconds>
       <MirroringY>Z</MirroringY>
       <MirroringZ>Y</MirroringZ>
-      <BuildTimeSeconds>12</BuildTimeSeconds>
+
       <ButtonCount>1</ButtonCount>
       <UnassignedButtonColor>
         <X>0.34</X>
@@ -61,8 +62,13 @@
       <ButtonSymbols>
         <string>Textures\GUI\Icons\buttons\IconSquareHighlight.dds</string>
       </ButtonSymbols>
+
       <DamageEffectId>214</DamageEffectId>
-      <UseModelIntersection>true</UseModelIntersection>
+      <DestroyEffectOffset>
+        <X>0</X>
+        <Y>-1.1</Y>
+        <Z>0</Z>
+      </DestroyEffectOffset>
 
       <BlockVariants>
         <BlockVariant>
@@ -77,6 +83,8 @@
         <TypeId>ButtonPanel</TypeId>
         <SubtypeId>ElevatorButtonPad_Rail</SubtypeId>
       </Id>
+      <PCU>5</PCU>
+      <BlockPairName>ElevatorButtonPad_Rail</BlockPairName>
       <DisplayName>Elevator Button Pad Rail</DisplayName>
       <Icon>Textures\Icons\ElevatorButtonPad_Rail.dds</Icon>
       <GuiVisible>false</GuiVisible>
@@ -97,7 +105,7 @@
         <Component Subtype="InteriorPlate" Count="2" />
       </Components>
       <CriticalComponent Subtype="Computer" Index="0" />
-	<MountPoints>
+      <MountPoints>
         <MountPoint Side="Front" StartX="0.00" StartY="0.00" EndX="1.00" EndY="0.41" />
         <MountPoint Side="Left" StartX="0.00" StartY="0.00" EndX="1.00" EndY="0.05" />
         <MountPoint Side="Right" StartX="0.00" StartY="0.00" EndX="1.00" EndY="0.05" />
@@ -105,16 +113,15 @@
         <MountPoint Side="Right" StartX="0.96" StartY="0.05" EndX="1.00" EndY="0.41" />
         <MountPoint Side="Back" StartX="0.00" StartY="0.00" EndX="1.00" EndY="0.05" />
         <MountPoint Side="Left" StartX="0.00" StartY="0.05" EndX="0.04" EndY="0.41" />
-	</MountPoints>
+      </MountPoints>
       <BuildProgressModels>
         <Model BuildPercentUpperBound="0.5" File="Models\ElevatorButtonPad_Rail_Construction1.mwm" />
         <Model BuildPercentUpperBound="1.0" File="Models\ElevatorButtonPad_Rail_Construction2.mwm" />
       </BuildProgressModels>
-      <BlockPairName>ElevatorButtonPad_Rail</BlockPairName>
-      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>16</BuildTimeSeconds>
       <MirroringY>Z</MirroringY>
       <MirroringZ>Y</MirroringZ>
-      <BuildTimeSeconds>16</BuildTimeSeconds>
+
       <ButtonCount>4</ButtonCount>
       <ButtonSymbols>
         <string>Textures\GUI\Icons\buttons\OneButton.dds</string>
@@ -154,8 +161,13 @@
           <W>1</W>
         </Vector4>
       </ButtonColors>
+
       <DamageEffectId>214</DamageEffectId>
-      <UseModelIntersection>true</UseModelIntersection>
+      <DestroyEffectOffset>
+        <X>0</X>
+        <Y>-1.1</Y>
+        <Z>0</Z>
+      </DestroyEffectOffset>
     </Definition>
 
     <Definition>
@@ -163,6 +175,8 @@
         <TypeId>CubeBlock</TypeId>
         <SubtypeId>ElevatorPad_Rail</SubtypeId>
       </Id>
+      <PCU>1</PCU>
+      <BlockPairName>ElevatorPad_Rail</BlockPairName>
       <DisplayName>Elevator Pad Rail</DisplayName>
       <Icon>Textures\Icons\ElevatorPad_Rail.dds</Icon>
       <GuiVisible>false</GuiVisible>
@@ -180,7 +194,7 @@
         <Component Subtype="InteriorPlate" Count="2" />
       </Components>
       <CriticalComponent Subtype="SmallTube" Index="0" />
-	<MountPoints>
+      <MountPoints>
         <MountPoint Side="Front" StartX="0.00" StartY="0.00" EndX="1.00" EndY="0.41" />
         <MountPoint Side="Left" StartX="0.00" StartY="0.00" EndX="1.00" EndY="0.05" />
         <MountPoint Side="Right" StartX="0.00" StartY="0.00" EndX="1.00" EndY="0.05" />
@@ -188,16 +202,13 @@
         <MountPoint Side="Right" StartX="0.96" StartY="0.05" EndX="1.00" EndY="0.41" />
         <MountPoint Side="Back" StartX="0.00" StartY="0.00" EndX="1.00" EndY="0.05" />
         <MountPoint Side="Left" StartX="0.00" StartY="0.05" EndX="0.04" EndY="0.41" />
-	</MountPoints>
+      </MountPoints>
       <BuildProgressModels>
         <Model BuildPercentUpperBound="1.00" File="Models\ElevatorPad_Rail_Construction1.mwm" />
       </BuildProgressModels>
-      <BlockPairName>ElevatorPad_Rail</BlockPairName>
+      <BuildTimeSeconds>10</BuildTimeSeconds>
       <MirroringY>Z</MirroringY>
       <MirroringZ>Y</MirroringZ>
-      <EdgeType>Light</EdgeType>
-      <BuildTimeSeconds>10</BuildTimeSeconds>
-      <UseModelIntersection>true</UseModelIntersection>
     </Definition>
 
     <Definition>
@@ -205,6 +216,8 @@
         <TypeId>CubeBlock</TypeId>
         <SubtypeId>ElevatorPad_SideRails</SubtypeId>
       </Id>
+      <PCU>1</PCU>
+      <BlockPairName>ElevatorPad_SideRails</BlockPairName>
       <DisplayName>Elevator Pad Side Rails</DisplayName>
       <Icon>Textures\Icons\ElevatorPad_SideRails.dds</Icon>
       <GuiVisible>false</GuiVisible>
@@ -222,7 +235,7 @@
         <Component Subtype="InteriorPlate" Count="2" />
       </Components>
       <CriticalComponent Subtype="SmallTube" Index="0" />
-	<MountPoints>
+      <MountPoints>
         <MountPoint Side="Front" StartX="0.00" StartY="0.00" EndX="1.00" EndY="0.41" />
         <MountPoint Side="Back" StartX="0.00" StartY="0.00" EndX="1.00" EndY="0.41" />
         <MountPoint Side="Left" StartX="0.00" StartY="0.00" EndX="1.00" EndY="0.05" />
@@ -232,16 +245,13 @@
         <MountPoint Side="Right" StartX="0.96" StartY="0.05" EndX="1.00" EndY="0.41" />
         <MountPoint Side="Left" StartX="0.96" StartY="0.05" EndX="1.00" EndY="0.41" />
         <MountPoint Side="Left" StartX="0.00" StartY="0.05" EndX="0.04" EndY="0.41" />
-	</MountPoints>
+      </MountPoints>
       <BuildProgressModels>
         <Model BuildPercentUpperBound="1.00" File="Models\ElevatorPad_SideRails_Construction1.mwm" />
       </BuildProgressModels>
-      <BlockPairName>ElevatorPad_SideRails</BlockPairName>
+      <BuildTimeSeconds>10</BuildTimeSeconds>
       <MirroringY>Z</MirroringY>
       <MirroringZ>Y</MirroringZ>
-      <EdgeType>Light</EdgeType>
-      <BuildTimeSeconds>10</BuildTimeSeconds>
-      <UseModelIntersection>true</UseModelIntersection>
     </Definition>
 
     <Definition>
@@ -249,6 +259,8 @@
         <TypeId>CubeBlock</TypeId>
         <SubtypeId>ElevatorPad_Corner</SubtypeId>
       </Id>
+      <PCU>1</PCU>
+      <BlockPairName>ElevatorPad_Corner</BlockPairName>
       <DisplayName>Elevator Pad Corner</DisplayName>
       <Icon>Textures\Icons\ElevatorPad_Corner.dds</Icon>
       <GuiVisible>false</GuiVisible>
@@ -266,7 +278,7 @@
         <Component Subtype="InteriorPlate" Count="2" />
       </Components>
       <CriticalComponent Subtype="SmallTube" Index="0" />
-	<MountPoints>
+      <MountPoints>
         <MountPoint Side="Front" StartX="0.00" StartY="0.00" EndX="1.00" EndY="0.41" />
         <MountPoint Side="Left" StartX="0.00" StartY="0.00" EndX="1.00" EndY="0.05" />
         <MountPoint Side="Right" StartX="0.00" StartY="0.00" EndX="1.00" EndY="0.05" />
@@ -275,17 +287,14 @@
         <MountPoint Side="Back" StartX="0.00" StartY="0.00" EndX="1.00" EndY="0.05" />
         <MountPoint Side="Left" StartX="0.00" StartY="0.05" EndX="0.04" EndY="0.41" />
         <MountPoint Side="Back" StartX="0.96" StartY="0.05" EndX="1.00" EndY="0.41" />
-	</MountPoints>
+      </MountPoints>
       <BuildProgressModels>
         <Model BuildPercentUpperBound="1.00" File="Models\ElevatorPad_Corner_Construction1.mwm" />
       </BuildProgressModels>
-      <BlockPairName>ElevatorPad_Corner</BlockPairName>
+      <BuildTimeSeconds>10</BuildTimeSeconds>
       <MirroringY>ZHalfY</MirroringY>
       <MirroringZ>HalfY</MirroringZ>
       <MirroringX>MinusHalfY</MirroringX>
-      <EdgeType>Light</EdgeType>
-      <BuildTimeSeconds>10</BuildTimeSeconds>
-      <UseModelIntersection>true</UseModelIntersection>
     </Definition>
 
     <Definition>
@@ -293,6 +302,8 @@
         <TypeId>CubeBlock</TypeId>
         <SubtypeId>ElevatorPad_Plate</SubtypeId>
       </Id>
+      <PCU>1</PCU>
+      <BlockPairName>ElevatorPad_Plate</BlockPairName>
       <DisplayName>Elevator Pad</DisplayName>
       <Icon>Textures\Icons\ElevatorPad_Plate.dds</Icon>
       <CubeSize>Large</CubeSize>
@@ -319,12 +330,9 @@
       <BuildProgressModels>
         <Model BuildPercentUpperBound="1.00" File="Models\ElevatorPad_Construction1.mwm" />
       </BuildProgressModels>
-      <BlockPairName>ElevatorPad_Plate</BlockPairName>
+      <BuildTimeSeconds>10</BuildTimeSeconds>
       <MirroringY>Z</MirroringY>
       <MirroringZ>Y</MirroringZ>
-      <EdgeType>Light</EdgeType>
-      <BuildTimeSeconds>10</BuildTimeSeconds>
-      <UseModelIntersection>true</UseModelIntersection>
 
       <BlockVariants>
         <BlockVariant>
