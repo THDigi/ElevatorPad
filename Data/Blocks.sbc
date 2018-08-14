@@ -18,14 +18,11 @@
       <Model>Models\ElevatorButtonPad.mwm</Model>
       <UseModelIntersection>true</UseModelIntersection>
       <Components>
-        <Component Subtype="Construction" Count="8" />
-        <Component Subtype="SteelPlate" Count="2" />
-        <Component Subtype="InteriorPlate" Count="2" />
-        <Component Subtype="MetalGrid" Count="15" />
-        <Component Subtype="SmallTube" Count="24" />
-        <Component Subtype="Computer" Count="1" />
-        <Component Subtype="InteriorPlate" Count="1" />
-        <Component Subtype="MetalGrid" Count="5" />
+        <Component Subtype="InteriorPlate" Count="15" />
+        <Component Subtype="Construction" Count="10" />
+        <Component Subtype="SmallTube" Count="17" />
+        <Component Subtype="Computer" Count="2" />
+        <Component Subtype="InteriorPlate" Count="10" />
       </Components>
       <CriticalComponent Subtype="Computer" Index="0" />
       <MountPoints>
@@ -94,14 +91,12 @@
       <Model>Models\ElevatorButtonPad_Rail.mwm</Model>
       <UseModelIntersection>true</UseModelIntersection>
       <Components>
+        <Component Subtype="InteriorPlate" Count="20" />
         <Component Subtype="Construction" Count="10" />
-        <Component Subtype="MetalGrid" Count="15" />
         <Component Subtype="SmallTube" Count="20" />
-        <Component Subtype="MetalGrid" Count="5" />
-        <Component Subtype="InteriorPlate" Count="10" />
         <Component Subtype="Computer" Count="10" />
-        <Component Subtype="Construction" Count="5" />
-        <Component Subtype="InteriorPlate" Count="2" />
+        <Component Subtype="Construction" Count="10" />
+        <Component Subtype="InteriorPlate" Count="10" />
       </Components>
       <CriticalComponent Subtype="Computer" Index="0" />
       <MountPoints>
@@ -185,11 +180,10 @@
       <Model>Models\ElevatorPad_Plate.mwm</Model>
       <UseModelIntersection>true</UseModelIntersection>
       <Components>
-        <Component Subtype="Construction" Count="3" />
-        <Component Subtype="MetalGrid" Count="15" />
-        <Component Subtype="SmallTube" Count="20" />
-        <Component Subtype="MetalGrid" Count="5" />
-        <Component Subtype="InteriorPlate" Count="2" />
+        <Component Subtype="InteriorPlate" Count="15" />
+        <Component Subtype="Construction" Count="7" />
+        <Component Subtype="SmallTube" Count="17" />
+        <Component Subtype="InteriorPlate" Count="8" />
       </Components>
       <CriticalComponent Subtype="SmallTube" Index="0" />
       <MountPoints>
@@ -239,11 +233,10 @@
       <Model>Models\ElevatorPad_Rail.mwm</Model>
       <UseModelIntersection>true</UseModelIntersection>
       <Components>
+        <Component Subtype="InteriorPlate" Count="20" />
         <Component Subtype="Construction" Count="5" />
-        <Component Subtype="MetalGrid" Count="20" />
         <Component Subtype="SmallTube" Count="20" />
-        <Component Subtype="MetalGrid" Count="5" />
-        <Component Subtype="InteriorPlate" Count="2" />
+        <Component Subtype="InteriorPlate" Count="7" />
       </Components>
       <CriticalComponent Subtype="SmallTube" Index="0" />
       <MountPoints>
@@ -280,11 +273,10 @@
       <Model>Models\ElevatorPad_SideRails.mwm</Model>
       <UseModelIntersection>true</UseModelIntersection>
       <Components>
+        <Component Subtype="InteriorPlate" Count="20" />
         <Component Subtype="Construction" Count="7" />
-        <Component Subtype="MetalGrid" Count="20" />
         <Component Subtype="SmallTube" Count="25" />
-        <Component Subtype="MetalGrid" Count="10" />
-        <Component Subtype="InteriorPlate" Count="2" />
+        <Component Subtype="InteriorPlate" Count="12" />
       </Components>
       <CriticalComponent Subtype="SmallTube" Index="0" />
       <MountPoints>
@@ -323,11 +315,10 @@
       <Model>Models\ElevatorPad_Corner.mwm</Model>
       <UseModelIntersection>true</UseModelIntersection>
       <Components>
+        <Component Subtype="InteriorPlate" Count="20" />
         <Component Subtype="Construction" Count="7" />
-        <Component Subtype="MetalGrid" Count="20" />
         <Component Subtype="SmallTube" Count="25" />
-        <Component Subtype="MetalGrid" Count="10" />
-        <Component Subtype="InteriorPlate" Count="2" />
+        <Component Subtype="InteriorPlate" Count="12" />
       </Components>
       <CriticalComponent Subtype="SmallTube" Index="0" />
       <MountPoints>
